@@ -1,0 +1,9 @@
+my_awesome_metrics:
+  query: "select count(1) as number_of_tweets, 123 my_custom_dimension from tweets"
+  metrics:
+    - number_of_tweets:
+        usage: "GAUGE"
+        description: "The number of tweets in the database."
+    - my_custom_dimension:
+        usage: "LABEL"
+        description: "Demonstrating how to add dimensions to metrics."
